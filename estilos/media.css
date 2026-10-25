@@ -1,0 +1,45 @@
+@media (min-width: 800px){
+
+    :root{
+    --cor1: #022859;
+    --cor2: #05C7F2;
+    --cor3: #F29422;
+    }
+
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    #btn-menu{
+        display: none;
+    }
+
+    nav, nav.aberto{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 15px;
+        padding-top: 0;
+    }
+
+    header a{
+        margin-bottom: 0;
+        min-width: 70px;
+    }
+
+    div#titulos{
+        width: auto;
+        gap: 20px;
+    }
+
+    #servicos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main{
+        padding: 0 40px;
+    }
+}

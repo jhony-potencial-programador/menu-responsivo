@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+:root{
+    --cor1: #022859;
+    --cor2: #05C7F2;
+    --cor3: #F29422;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-block: 30px;
+    box-shadow: 0 2px 8px #0302026b;
+}
+
+div#titulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#btn-menu{
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--cor1);
+}
+
+#btn-menu .material-icons{
+    font-size: 32px;
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+nav.aberto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cor2);
+    border-radius: 3px;
+    background-color: black;
+    padding: 4px 7px;
+    margin-bottom: 8px;
+    text-align: center;
+    max-width: 80%;
+}
+
+img{
+    width: 80px;
+}
+
+section{
+    padding: 30px 0px;
+}
+
+/* ========== MAIN ========== */
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main h1{
+    color: var(--cor1);
+    margin-bottom: 15px;
+}
+
+main h2{
+    color: var(--cor1);
+    display: inline-block;
+    border-bottom: 3px solid var(--cor3);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+main h3{
+    color: var(--cor1);
+    margin-bottom: 8px;
+}
+
+main p{
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* ========== INÍCIO ========== */
+#inicio{
+    text-align: center;
+}
+
+#inicio h2{
+    font-size: 2em;
+    border-bottom: none;
+}
+
+#inicio a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--cor1);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#inicio a:hover{
+    background-color: var(--cor3);
+}
+
+/* ========== SOBRE ========== */
+#sobre{
+    background-color: #f7f7f7;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+/* ========== SERVIÇOS ========== */
+#servicos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#servicos h2{
+    grid-column: 1 / -1;
+    justify-self: start;
+}
+
+article{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-top: 4px solid var(--cor2);
+    border-radius: 8px;
+}
+
+/* ========== CONTATO ========== */
+#contato{
+    text-align: center;
+}
+
+/* ========== ÂNCORAS ========== */
+
+html{
+    scroll-behavior: smooth;
+}
